@@ -28,17 +28,17 @@ Enter bgfx directory:
 
     cd bgfx
 
-Generate Visual Studio 2017 project files:
+Generate Visual Studio 2022 project files:
 
 ::
 
-    ..\bx\tools\bin\windows\genie --with-examples vs2017
+    ..\bx\tools\bin\windows\genie --with-examples vs2022
 
-Open bgfx solution in Visual Studio 2017:
+Open bgfx solution in Visual Studio 2022:
 
 ::
 
-    start .build\projects\vs2017\bgfx.sln
+    start .build\projects\vs2022\bgfx.sln
 
 .. note:: For more detailed prerequisites and build steps on other platforms see below.
 
@@ -111,17 +111,17 @@ Configuration is ``<platform>-<debug/release>[32/64]``. For example:
 Windows
 ~~~~~~~
 
-Visual Studio 2017 command line:
+Visual Studio 2022 command line:
 
 ::
 
-    make vs2017-release64
+    make vs2022-release64
 
-Visual Studio 2017 IDE:
+Visual Studio 2022 IDE:
 
 ::
 
-    start .build/projects/vs2017/bgfx.sln
+    start .build/projects/vs2022/bgfx.sln
 
 Xcode
 ~~~~~
@@ -162,7 +162,7 @@ WinRT / UWP
 
 ::
 
-    ..\bx\tools\bin\windows\genie --vs=winstore100 vs2017
+    ..\bx\tools\bin\windows\genie --vs=winstore100 vs2022
 
 Build the resulting solution and deploy to device.
 
@@ -185,7 +185,7 @@ To build bgfx project files for tools, use ``--with-tools`` option:
 
 ::
 
-    ..\bx\tools\bin\windows\genie --with-tools vs2017
+    ..\bx\tools\bin\windows\genie --with-tools vs2022
 
 
 Alternative build systems
